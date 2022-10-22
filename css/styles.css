@@ -95,6 +95,9 @@ body{
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
+    border: 1px solid;
+    border-color: tomato;
+
 }
 
 .visually-hidden{
@@ -228,14 +231,21 @@ body{
 
 
 /*--------------footer--------------*/
+
 .footer{
     background-color:var(--accent-background-color);
     padding-top: 60px;
     padding-bottom: 60px;
 }
 
-/*address*/
+.contact-wrap{
+    display: flex;
+}
 
+/*--------------CONTACTS--------------*/
+
+.contact{
+}
 .logo-accent-white{
     color:var(--hero-text-color);
 }
@@ -268,6 +278,57 @@ body{
     display: inline-block;
 }
 
+
+/*--------------JOIN------------ */
+
+.join{
+    width: calc(50%-15px);
+    padding-left: 10px;
+}
+.footer-soc-titel{
+    color: var(--hero-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.footer-soc-list {
+    display: flex;
+    gap: 10px;
+
+}
+
+.footer-soc-item {
+    width: 44px;
+    height: 44px;
+}
+
+.footer-soc-link {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color:rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-soc-link{
+    fill:var(--hero-text-color);
+}
+
+.footer-soc-link:hover, 
+.footer-soc-link:focus{
+    background-color: var(--logo-blue-color);
+}
+
+.footer-soc-link:hover, 
+.footer-soc-link:focus .clints-soc-icon{
+    fill: var(--hero-text-color)
+}
 
 
 /*--------------WebStudio------------ */
@@ -334,6 +395,17 @@ body{
     flex-basis: calc((100% - 3 * 30px) / 4);
 }
 
+.benefits-thumb{
+    background-color: var(--additional-background-color);
+    width: 270px;
+    height: 120px;
+}
+
+.benefits-icon{
+    justify-content: center;
+    align-items: center;
+}
+
 .benefits-title{
     color: var(--primary-text-color);
     font-weight: 700;
@@ -341,6 +413,7 @@ body{
     line-height: calc(16/14);
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-top: 30px;
     margin-bottom: 10px;
 }
 
@@ -391,7 +464,6 @@ body{
 
 .our-team{
     display: flex;
-    flex-wrap: wrap;
     flex-basis: calc(100% / 3);
     gap: 30px;
 
@@ -485,6 +557,7 @@ body{
 
 .clients-list {
     display: flex;
+    justify-content: center;
     gap: 30px;
 }
 
@@ -499,10 +572,24 @@ body{
     border: 1px solid;
     border-color: var(--clients-border);
     border-radius: 4px;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.clients-link{
+    fill:var(--team-soc-item-color);
+}
 
+.clients-link:hover,
+.clients-link:focus {
+    border: 1px solid;
+    border-color: var (--logo-blue-color);
+}
+.clients-link:hover, 
+.clients-link:focus .clints-soc-icon{
+    fill: var(--logo-blue-color)
+}
 /*--------------Portfoio------------ */
 
 .filter-section{
