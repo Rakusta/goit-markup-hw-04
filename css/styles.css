@@ -215,20 +215,15 @@ body{
 }
 
 .auth-link{
-    display: block;
     padding-top: 32px;
     padding-bottom: 32px;
     display: flex;
 }
 
-.auth-link::before{
-    content: '';
-    background-image: url(../images/header1.svg);
-    width: 16px;
-    height: 12px;
-    margin-right: 10px;
+.header-icon{
+    display: flex;
+    margin-left: auto;
 }
-
 
 /*--------------footer--------------*/
 
@@ -281,7 +276,11 @@ body{
 
 /*--------------JOIN------------ */
 
-.join{
+.footer-contact{
+
+}
+
+.footer-join{
     width: calc(50%-15px);
     padding-left: 10px;
 }
@@ -399,11 +398,14 @@ body{
     background-color: var(--additional-background-color);
     width: 270px;
     height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .benefits-icon{
-    justify-content: center;
-    align-items: center;
+    width: 70px;
+    min-height: 70px;
 }
 
 .benefits-title{
