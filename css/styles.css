@@ -95,9 +95,6 @@ body{
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-    border: 1px solid;
-    border-color: tomato;
-
 }
 
 .visually-hidden{
@@ -150,8 +147,13 @@ body{
 
 .header-navigation {
     margin-left: 93px;
-
 }
+
+.header-icon{
+    width: 16px;
+    height: 10px;
+}
+
 .site-nav-list {
     display: flex;
     gap: 50px;
@@ -207,6 +209,8 @@ body{
 .auth-nav-list .auth-link {
     color: var(--accet-text-color);
     text-decoration: none;
+    display: flex;
+    align-items: center;
 }
 
 .auth-nav-list,.auth-link:hover,
