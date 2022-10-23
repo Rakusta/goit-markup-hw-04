@@ -217,14 +217,12 @@ body{
 .auth-link{
     padding-top: 32px;
     padding-bottom: 32px;
-    display: flex;
 }
 
-.header-icon{
-    display: flex;
-    margin-left: auto;
+.auth-link:hover, 
+.cauth-link .header-icon{
+    fill: var(--logo-blue-color)
 }
-
 /*--------------footer--------------*/
 
 .footer{
@@ -233,14 +231,14 @@ body{
     padding-bottom: 60px;
 }
 
-.contact-wrap{
+.footer-container {
     display: flex;
+    align-items: baseline;
 }
 
 /*--------------CONTACTS--------------*/
 
-.contact{
-}
+
 .logo-accent-white{
     color:var(--hero-text-color);
 }
@@ -273,12 +271,13 @@ body{
     display: inline-block;
 }
 
+.footer-contact{
+    margin-right: 70px;
+}
 
 /*--------------JOIN------------ */
 
-.footer-contact{
 
-}
 
 .footer-join{
     width: calc(50%-15px);
