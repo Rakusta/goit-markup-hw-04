@@ -19,6 +19,7 @@ html {
     --button-color:#2196F3;
     --button-acvive-color:#188CE8;
     --filter-btn-border-color: #ECECEC;
+    --hero-background-color: #C4C4C4;
 
     --filter-colour:#F5F4FA;
     --filter-active-color:#2196F3;
@@ -149,10 +150,7 @@ body{
     margin-left: 93px;
 }
 
-.header-icon{
-    width: 16px;
-    height: 10px;
-}
+
 
 .site-nav-list {
     display: flex;
@@ -218,13 +216,17 @@ body{
     color:var(--logo-blue-color);                                       
 }
 
+.header-icon{
+    margin-right: 10px;
+    fill: currentColor;
+}
 .auth-link{
     padding-top: 32px;
     padding-bottom: 32px;
 }
 
-.auth-link:hover, 
-.cauth-link .header-icon{
+.header-icon:hover,
+.header-icon:focus .header-icon{
     fill: var(--logo-blue-color)
 }
 /*--------------footer--------------*/
@@ -281,12 +283,6 @@ body{
 
 /*--------------JOIN------------ */
 
-
-
-.footer-join{
-    width: calc(50%-15px);
-    padding-left: 10px;
-}
 .footer-soc-titel{
     color: var(--hero-text-color);
     font-weight: 700;
@@ -319,8 +315,19 @@ body{
 }
 
 .footer-soc-link{
-    fill:var(--hero-text-color);
+    fill: currentColor var(--hero-text-color);
 }
+
+.footer-soc-link:hover, 
+.footer-soc-link:focus{
+    background-color: var(--logo-blue-color);
+}
+
+.footer-soc-link:hover, 
+.footer-soc-link:focus .clints-soc-icon{
+    fill: var(--hero-text-color)
+}
+
 
 .footer-soc-link:hover, 
 .footer-soc-link:focus{
@@ -340,15 +347,17 @@ body{
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
-    background-color: var(--accent-background-color);
+    background-color: var(--hero-background-color);
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
         ),
         url(../images/Hero.jpeg);
+    max-width: 1600рх;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    margin: 0 auto;
 }
 
 .hero-title{
@@ -403,12 +412,10 @@ body{
     height: 120px;
     display: flex;
     align-items: center;
-    justify-content: center;
-}
+    justify-content:space-between}
 
 .benefits-icon{
-    width: 70px;
-    min-height: 70px;
+    height: 60%;
 }
 
 .benefits-title{
@@ -624,6 +631,9 @@ padding-bottom: 94px;
 .filter:focus {
     color: var(--hero-text-color);
     background-color: var(--filter-active-color);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.08);
+    box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
 .filters-list{
@@ -638,6 +648,7 @@ padding-bottom: 94px;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    
 }
 
 .filter-item {
@@ -665,4 +676,15 @@ padding-bottom: 94px;
     font-size: 16px;
     line-height: calc(30/16);
     letter-spacing: 0.03em;
+}
+
+.filter-card{
+    display: block;
+}
+.filter-card:hover,
+.filter-card:focus {
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.06);
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+
 }
